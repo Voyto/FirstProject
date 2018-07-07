@@ -15,10 +15,25 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="152">
+              <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UczenService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UczenService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="51" column="20" selection-start-line="50" selection-start-column="14" selection-end-line="51" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2340#2341#0" expanded="true" />
+                <element signature="e#2381#2382#0" expanded="true" />
+                <element signature="method#dodajUcznia#0;class#UczenService#0" />
               </folding>
             </state>
           </provider>
@@ -27,13 +42,14 @@
       <file leaf-file-name="SamochodSerwis.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SamochodSerwis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+            <state relative-caret-position="141">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#wyborRodzajuSamochodu#0;class#SamochodSerwis#0" />
-                <element signature="method#zapytajka#0;class#SamochodSerwis#0" />
-                <element signature="method#dodajGotowySamochod#0;class#SamochodSerwis#0" />
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#1938#1939#0" expanded="true" />
+                <element signature="e#1979#1980#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,19 +76,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UczenService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UczenService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#dodajUcznia#0;class#UczenService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Uczen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Uczen.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,6 +93,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -119,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/SamochodGenerator.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/SamochodGenerator.java" />
+        <option value="$PROJECT_DIR$/src/UczenService.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/SamochodSerwis.java" />
       </list>
@@ -130,6 +137,7 @@
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -253,7 +261,7 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.32763532" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
@@ -331,9 +339,10 @@
           <caret line="14" column="27" selection-start-line="14" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#wyborRodzajuSamochodu#0;class#SamochodSerwis#0" />
-            <element signature="method#zapytajka#0;class#SamochodSerwis#0" />
-            <element signature="method#dodajGotowySamochod#0;class#SamochodSerwis#0" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -361,6 +370,8 @@
           <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
             <element signature="method#dodajUcznia#0;class#UczenService#0" />
           </folding>
         </state>
@@ -389,9 +400,10 @@
           <caret line="14" column="27" selection-start-line="14" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#wyborRodzajuSamochodu#0;class#SamochodSerwis#0" />
-            <element signature="method#zapytajka#0;class#SamochodSerwis#0" />
-            <element signature="method#dodajGotowySamochod#0;class#SamochodSerwis#0" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -409,6 +421,8 @@
           <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
             <element signature="method#dodajUcznia#0;class#UczenService#0" />
           </folding>
         </state>
@@ -447,6 +461,8 @@
           <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
             <element signature="method#dodajUcznia#0;class#UczenService#0" />
           </folding>
         </state>
@@ -472,9 +488,10 @@
           <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#wyborRodzajuSamochodu#0;class#SamochodSerwis#0" />
-            <element signature="method#zapytajka#0;class#SamochodSerwis#0" />
-            <element signature="method#dodajGotowySamochod#0;class#SamochodSerwis#0" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -495,9 +512,10 @@
           <caret line="86" column="41" lean-forward="true" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#wyborRodzajuSamochodu#0;class#SamochodSerwis#0" />
-            <element signature="method#zapytajka#0;class#SamochodSerwis#0" />
-            <element signature="method#dodajGotowySamochod#0;class#SamochodSerwis#0" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -508,6 +526,8 @@
           <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
             <element signature="method#dodajUcznia#0;class#UczenService#0" />
           </folding>
         </state>
@@ -543,6 +563,8 @@
           <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
             <element signature="method#dodajUcznia#0;class#UczenService#0" />
           </folding>
         </state>
@@ -554,9 +576,10 @@
           <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#wyborRodzajuSamochodu#0;class#SamochodSerwis#0" />
-            <element signature="method#zapytajka#0;class#SamochodSerwis#0" />
-            <element signature="method#dodajGotowySamochod#0;class#SamochodSerwis#0" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,17 +674,6 @@
     <entry file="file://$PROJECT_DIR$/src/UczenSerwis.java" />
     <entry file="file://$PROJECT_DIR$/src/Gosc.java" />
     <entry file="file://$PROJECT_DIR$/src/Osoba.java" />
-    <entry file="file://$PROJECT_DIR$/src/UczenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#dodajUcznia#0;class#UczenService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Uczen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -686,10 +698,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UczenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="51" column="20" selection-start-line="50" selection-start-column="14" selection-end-line="51" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2340#2341#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="method#dodajUcznia#0;class#UczenService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="152">
+          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -698,13 +723,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SamochodSerwis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+        <state relative-caret-position="141">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#wyborRodzajuSamochodu#0;class#SamochodSerwis#0" />
-            <element signature="method#zapytajka#0;class#SamochodSerwis#0" />
-            <element signature="method#dodajGotowySamochod#0;class#SamochodSerwis#0" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
       </provider>

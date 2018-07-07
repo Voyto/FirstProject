@@ -3,20 +3,24 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SamochodSerwis {
+
+
     Scanner scanner = new Scanner(System.in);
     List<Samochod> Katalog = new ArrayList<Samochod>();
-
     public List<Samochod> getKatalog() {
         return Katalog;
     }
+
     SamochodGenerator generator = new SamochodGenerator();
-    public void generujSamochod (){
+
+    public void generujSamochod() {
 
         dodajGotowySamochod(generator.generujSamochod());
 
 
     }
-    public void dodaj10Samochodow (){
+
+    public void dodaj10Samochodow() {
 
         Samochod corsa = new Samochod("Opel", "Corsa", 5000, 2000, 4, "Osobowy", 4, "Diesel");
         Samochod fiesta = new Samochod("Ford", "Fiesta", 4000, 3232, 5, "Osobowy", 3, "Benzyna");
@@ -42,155 +46,195 @@ public class SamochodSerwis {
 
 
     }
-    public void setKatalog(List<Samochod> katalog) {
-        Katalog = katalog;
-    }
-    public void wyborRodzajuSamochodu(){
-        System.out.println("Jesli interesuje Cie samochód osobowy wpisz 1, jesli ciężarowy wpisz 2");
 
 
-        int l = scanner.nextInt();
-        int a = 0;
-        for (int k = 0; k < Katalog.size(); k++) {
-            if (l == 1) {
-                System.out.println(Katalog.get(k).getRodzaj() == "Osobowy");
-                System.out.println(Katalog.get(k).getMarka());
-                System.out.println(Katalog.get(k).getModel());
-                System.out.println();
+        public void setKatalog (List < Samochod > katalog) {
+            Katalog = katalog;
+        }
+        public void wyborRodzajuSamochodu () {
+            System.out.println("Jesli interesuje Cie samochód osobowy wpisz 1, jesli ciężarowy wpisz 2");
 
-                if (Katalog.get(k).getRodzaj() == "Osobowy") {
 
-                    System.out.println("-------");
+            int l = scanner.nextInt();
+            int a = 0;
+            for (int k = 0; k < Katalog.size(); k++) {
+                if (l == 1) {
+                    System.out.println(Katalog.get(k).getRodzaj() == "Osobowy");
                     System.out.println(Katalog.get(k).getMarka());
-                    System.out.println(Katalog.get(k).getRodzaj());
                     System.out.println(Katalog.get(k).getModel());
-                    System.out.println("-------");
+                    System.out.println();
 
+                    if (Katalog.get(k).getRodzaj() == "Osobowy") {
+
+                        System.out.println("-------");
+                        System.out.println(Katalog.get(k).getMarka());
+                        System.out.println(Katalog.get(k).getRodzaj());
+                        System.out.println(Katalog.get(k).getModel());
+                        System.out.println("-------");
+
+                    }
+
+                } else {
+
+
+                    if (Katalog.get(k).getRodzaj() == "Ciężarowy") {
+                        System.out.println("-------");
+                        System.out.println(Katalog.get(k).getMarka());
+                        System.out.println(Katalog.get(k).getRodzaj());
+                        System.out.println(Katalog.get(k).getModel());
+                        System.out.println("-------");
+                    }
                 }
 
+
             }
-            else {
-
-
-                if (Katalog.get(k).getRodzaj() == "Ciężarowy") {
-                    System.out.println("-------");
-                    System.out.println(Katalog.get(k).getMarka());
-                    System.out.println(Katalog.get(k).getRodzaj());
-                    System.out.println(Katalog.get(k).getModel());
-                    System.out.println("-------");
-                }
-            }
-
 
         }
+        public void zapytajka () {
 
-    }
-    public void zapytajka(){
+            System.out.println("Podaj ilosc miejsc ");
+            int w = scanner.nextInt();
+            System.out.println("Podaj Pojemnosc Silnika");
+            int pojemnoscsilnika = scanner.nextInt();
+            System.out.println("Spalanie ");
+            int spalanie = scanner.nextInt();
+            for (int e = 0; e < Katalog.size(); e++) {
 
-        System.out.println("Podaj ilosc miejsc ");
-        int w = scanner.nextInt();
-        System.out.println("Podaj Pojemnosc Silnika");
-        int pojemnoscsilnika = scanner.nextInt();
-        System.out.println("Spalanie ");
-        int spalanie = scanner.nextInt();
-        for(int e=0;e<Katalog.size();e++) {
-
-            if (w == Katalog.get(e).getIloscMiejsc()) {
-                System.out.println("JESTEM");
-
-                if (pojemnoscsilnika == Katalog.get(e).getPojemnoscSilnika()) {
+                if (w == Katalog.get(e).getIloscMiejsc()) {
                     System.out.println("JESTEM");
 
-
-                    if (Katalog.get(e).getSpalanie() > 4 && Katalog.get(e).getSpalanie() < 6) {
+                    if (pojemnoscsilnika == Katalog.get(e).getPojemnoscSilnika()) {
                         System.out.println("JESTEM");
 
-                        System.out.println("----------------------");
-                        System.out.println(Katalog.get(e).getModel());
-                        System.out.println(Katalog.get(e).getMarka());
-                        System.out.println("----------------------");
-                    }
-                    else{
+
+                        if (Katalog.get(e).getSpalanie() > 4 && Katalog.get(e).getSpalanie() < 6) {
+                            System.out.println("JESTEM");
+
+                            System.out.println("----------------------");
+                            System.out.println(Katalog.get(e).getModel());
+                            System.out.println(Katalog.get(e).getMarka());
+                            System.out.println("----------------------");
+                        } else {
+                            System.out.println("Brak samochodu spełniaącego wymagania leszczu");
+                        }
+
+                    } else {
                         System.out.println("Brak samochodu spełniaącego wymagania leszczu");
                     }
-
-                }
-                else{
+                } else {
                     System.out.println("Brak samochodu spełniaącego wymagania leszczu");
                 }
             }
-            else{
-                System.out.println("Brak samochodu spełniaącego wymagania leszczu");
-            }
         }
-    }
-public void wypiszWsieSamochody(){
-        for(int i=0;i< Katalog.size();i++){
+        public void wypiszWsieSamochody () {
+            for (int i = 0; i < Katalog.size(); i++) {
 
-            System.out.println(Katalog.get(i).toString());
+                System.out.println(Katalog.get(i).toString());
 
-        }    System.out.println();
+            }
+            System.out.println();
 
-    System.out.println("***********");
-    System.out.println("PRESS ENTER");
-    System.out.println("***********");
-    scanner.nextLine();
-
-
+            System.out.println("***********");
+            System.out.println("PRESS ENTER");
+            System.out.println("***********");
+            scanner.nextLine();
 
 
-}
-    void dodajGotowySamochod (Samochod samochod){
+        }
+        void dodajGotowySamochod (Samochod samochod){
 
-        Katalog.add(samochod);
-
-
-    }
+            Katalog.add(samochod);
 
 
-    
-    void DodajSamochod (){
-     Samochod samochod = new Samochod();
-    //String dodajsamochod = scanner.nextLine();
-    String Marka;
-    String Rodzaj;
-    String RodzajSilnika;
-    String Model;
-    int PojemoscSilnika;
-    int PojemnoscBagaznika;
-    String RodzajPaliwa;
-    int IloscMiejsc;
-    double spalanie;
+        }
 
-     System.out.println("Podaj ilosc miejsc");
 
-     IloscMiejsc = scanner.nextInt();
-     samochod.setIloscMiejsc(IloscMiejsc);
-     scanner.nextLine();
-     System.out.println("Podaj model");
-     Model = scanner.nextLine();
-    samochod.setModel(Model);
-     System.out.println("Marka");
-    Marka = scanner.nextLine();
-    samochod.setMarka(Marka);
-     System.out.println("Pojemnosc bagaznika");
-    PojemnoscBagaznika = scanner.nextInt();
-    samochod.setPojemnoscBagaznik(PojemnoscBagaznika);
-     System.out.println("Pojemnosc Silnika");
-    PojemoscSilnika = scanner.nextInt();
-    samochod.setPojemnoscSilnika(PojemoscSilnika);
-    scanner.nextLine();
-     System.out.println("Rodzaj");
-    Rodzaj= scanner.nextLine();
-    samochod.setRodzaj(Rodzaj);
-     System.out.println("Rodzaj Paliwa");
-    RodzajPaliwa = scanner.nextLine();
-    samochod.setRodzajPaliwa(RodzajPaliwa);
-     System.out.println("Spalanie");
-    spalanie = scanner.nextDouble();
-    samochod.setSpalanie(spalanie);
-    Katalog.add(samochod);
+        void DodajSamochod () {
+            Samochod samochod = new Samochod();
+            //String dodajsamochod = scanner.nextLine();
+            String Marka;
+            String Rodzaj;
+            String RodzajSilnika;
+            String Model;
+            int PojemoscSilnika;
+            int PojemnoscBagaznika;
+            String RodzajPaliwa;
+            int IloscMiejsc;
+            double spalanie;
 
-    }
+            System.out.println("Podaj ilosc miejsc");
 
-}
+            IloscMiejsc = scanner.nextInt();
+            samochod.setIloscMiejsc(IloscMiejsc);
+            scanner.nextLine();
+            System.out.println("Podaj model");
+            Model = scanner.nextLine();
+            samochod.setModel(Model);
+            System.out.println("Marka");
+            Marka = scanner.nextLine();
+            samochod.setMarka(Marka);
+            System.out.println("Pojemnosc bagaznika");
+            PojemnoscBagaznika = scanner.nextInt();
+            samochod.setPojemnoscBagaznik(PojemnoscBagaznika);
+            System.out.println("Pojemnosc Silnika");
+            PojemoscSilnika = scanner.nextInt();
+            samochod.setPojemnoscSilnika(PojemoscSilnika);
+            scanner.nextLine();
+            System.out.println("Rodzaj");
+            Rodzaj = scanner.nextLine();
+            samochod.setRodzaj(Rodzaj);
+            System.out.println("Rodzaj Paliwa");
+            RodzajPaliwa = scanner.nextLine();
+            samochod.setRodzajPaliwa(RodzajPaliwa);
+            System.out.println("Spalanie");
+            spalanie = scanner.nextDouble();
+            samochod.setSpalanie(spalanie);
+            Katalog.add(samochod);
+
+        }
+
+    public void menuSamochody() {
+
+        while (true) {
+
+            System.out.println("1.Dodaj Samochód ");
+            System.out.println("2.Dodaj 10 gotowych samochodów ");
+            System.out.println("3.Wybór rodzaju samochodu ");
+            System.out.println("4.Zapytajka ");
+            System.out.println("5.Wypisz wszystkie samochody ");
+            System.out.println("6.Generuj samochód");
+            System.out.println("0.Wyjscie ");
+
+            int k = scanner.nextInt();
+            switch (k) {
+
+                case 1:
+                    DodajSamochod(); ///// stowrzylem samochod
+                    break;
+                case 2:
+                    dodaj10Samochodow();
+                    break;
+                case 3:
+                    wyborRodzajuSamochodu();
+                    break;
+                case 4:
+                    zapytajka();
+                    break;
+                case 5:
+                    wypiszWsieSamochody();
+                    break;
+                case 6:
+                    System.out.println("Podaj ilość generowanych samochodów");
+                    int j = scanner.nextInt();
+                    for (int i = 0; i < j; i++) {
+                        generujSamochod();
+                    }
+                    break;
+                default:
+                    break;
+                case 0:
+                    return;
+            }
+
+        }
+    }}

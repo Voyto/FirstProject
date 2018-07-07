@@ -12,7 +12,7 @@ public class UczenService {
     public void setListaObecnosci(List<Uczen> listaObecnosci) {
         ListaObecnosci = listaObecnosci;
     }
-public void dodajCzterachUczniow(){
+public void dodajCzterachUczniow() {
     Uczen jacek = new Uczen("Jacek", "Stanislawowski", "1224625472", 20);
     Uczen stasiek = new Uczen("Stasiek", "Myczychuj", "29482746352", 15);
     Uczen jan = new Uczen("Jan", "NotRedundant", "28574625491", 19);
@@ -22,9 +22,38 @@ public void dodajCzterachUczniow(){
     dodajGotowegoUcznia(stasiek);
     dodajGotowegoUcznia(jan);
     dodajGotowegoUcznia(artyom);
-
-
 }
+public void menuUczniowie() {
+    while (true) {
+
+            System.out.println("1.Dodaj czterech gotowych uczniow ");
+            System.out.println("2.Dodaj Ucznia ");
+            System.out.println("3.Wypisz wszystkich uczniów ");
+            System.out.println("4.Wypisz uczniow 18+ ");
+            System.out.println("0.Wyjscie ");
+            int k=scanner.nextInt();
+        switch(k) {
+
+            case 1:
+                dodajCzterachUczniow();
+                break;
+            case 2:
+                dodajUcznia();
+                break;
+            case 3:
+                wypiszWszystkichUczniow();
+                break;
+            case 4:
+                wypiszUcznow18plus();
+                break;
+            default:
+                break;
+            case 0:
+                return;
+        }
+    }
+}
+
 public void wypiszWszystkichUczniow(){
 
     for (int i = 0; i < ListaObecnosci.size(); i++) {
