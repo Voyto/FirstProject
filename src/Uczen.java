@@ -1,8 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Uczen {
     String Imie;
     String Nazwisko;
     String Pesel;
     int Wiek;
+    List<Integer> Oceny = new ArrayList<Integer>();
+    public List<Integer> getOceny() {
+        return Oceny;
+    }
+    public void setOceny (List < Integer > oceny) {
+        Oceny = oceny;
+    }
+
+
+
+
+
 
     public Uczen() {
     }
@@ -12,6 +27,7 @@ public class Uczen {
         Nazwisko = nazwisko;
         Pesel = pesel;
         Wiek = wiek;
+
     }
 
     public String getImie() {

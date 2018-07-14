@@ -1,3 +1,4 @@
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -93,39 +94,42 @@ public class SamochodSerwis {
         public void zapytajka () {
 
             System.out.println("Podaj ilosc miejsc ");
-            int w = scanner.nextInt();
+            int iloscMiejsc = scanner.nextInt();
             System.out.println("Podaj Pojemnosc Silnika");
             int pojemnoscsilnika = scanner.nextInt();
-            System.out.println("Spalanie ");
+            System.out.println("Spalanie");
             int spalanie = scanner.nextInt();
+            System.out.println("Podaj Marka");
+            scanner.nextLine();
+            String marka = scanner.nextLine();
+            System.out.println("Podaj Model");
+            String model = scanner.nextLine();
+            System.out.println("Podaj pojemnosc bagaznika");
+            int pojemnoscBagaznika = scanner.nextInt();
+            scanner.nextLine();
+            System.out.println("Podaj rodzaj paliwa");
+            String rodzajPaliwa = scanner.nextLine();
             for (int e = 0; e < Katalog.size(); e++) {
+                if (iloscMiejsc== Katalog.get(e).getIloscMiejsc() && pojemnoscsilnika == Katalog.get(e).getPojemnoscSilnika() && spalanie ==Katalog.get(e).getSpalanie()
+                        && marka.equals(Katalog.get(e).getMarka()) && model.equals(Katalog.get(e).getModel())  && pojemnoscBagaznika == Katalog.get(e).getPojemnoscBagaznik() &&
+                         rodzajPaliwa.equals(Katalog.get(e).rodzajPaliwa)){
 
-                if (w == Katalog.get(e).getIloscMiejsc()) {
-                    System.out.println("JESTEM");
+                    System.out.print(Katalog.get(e).getModel()+ " ");
 
-                    if (pojemnoscsilnika == Katalog.get(e).getPojemnoscSilnika()) {
-                        System.out.println("JESTEM");
+                    System.out.print(Katalog.get(e).getMarka()+ " ");
+                    System.out.print(Katalog.get(e).getRodzaj()+ " ");
+                    System.out.print(Katalog.get(e).getSpalanie()+ " ");
+                    System.out.print(Katalog.get(e).getIloscMiejsc()+ " ");
+                    System.out.print(Katalog.get(e).getRodzajPaliwa()+ " ");
+                    System.out.print(Katalog.get(e).getPojemnoscSilnika()+ " ");
+                    System.out.print(Katalog.get(e).getPojemnoscBagaznik()+ " ");
+                    System.out.println();
 
-
-                        if (Katalog.get(e).getSpalanie() > 4 && Katalog.get(e).getSpalanie() < 6) {
-                            System.out.println("JESTEM");
-
-                            System.out.println("----------------------");
-                            System.out.println(Katalog.get(e).getModel());
-                            System.out.println(Katalog.get(e).getMarka());
-                            System.out.println("----------------------");
-                        } else {
-                            System.out.println("Brak samochodu spełniaącego wymagania leszczu");
-                        }
-
-                    } else {
-                        System.out.println("Brak samochodu spełniaącego wymagania leszczu");
-                    }
-                } else {
-                    System.out.println("Brak samochodu spełniaącego wymagania leszczu");
-                }
             }
+
         }
+    }
+
         public void wypiszWsieSamochody () {
             for (int i = 0; i < Katalog.size(); i++) {
 
